@@ -16,10 +16,12 @@ public class Family implements Rules {
 		}
 	}
 	
-	public String currentMember() {
-		String currentMember = members[current];
+	public String getCurrentMember() {
+		return members[current];
+	}
+
+	public void nextCurrentMember() {
 		current = (current + 1) % maxMembers;
-		return currentMember;
 	}
 	
 	public boolean won() {
@@ -73,6 +75,6 @@ public class Family implements Rules {
 	}
 	
 	public String toString() {
-		return familyName;
+		return getName();
 	}
 }

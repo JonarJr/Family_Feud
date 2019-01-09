@@ -27,7 +27,7 @@ public class Host implements Rules {
 			System.out.println("From " + f2.getLocation() + ", it's the " + f2.getName() + " family!");
 		}
 		
-		System.out.println("Give me " + f1.currentMember() + ", give me " + f2.currentMember() + "!\n");
+		System.out.println("Give me " + f1.getCurrentMember() + ", give me " + f2.getCurrentMember() + "!\n");
 	}
 	
 	public void react(String response) {
